@@ -65,6 +65,7 @@ jobs:
             echo test, and deploy your project.
             
   deploy:
+    needs: build
     name: Deploy
     runs-on: ubuntu-latest
     environment: production
